@@ -1,0 +1,102 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #263238;
+    margin: 0;
+    padding: 24px;
+    line-height: 1.6;
+}
+
+/* ID selector: page heading area */
+#page-header {
+    background-color: #173f5f;
+    color: white;
+    text-align: center;
+    padding: 28px 20px;
+    border-radius: 12px;
+    margin: 0 auto 24px;
+    max-width: 760px;
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: 2rem;
+}
+
+#page-header p {
+    margin: 0;
+}
+
+/* Class selector: Add Expense section */
+.expense-form-section {
+    background-color: #ffffff;
+    max-width: 700px;
+    margin: 0 auto 22px;
+    padding: 24px;
+    border-left: 5px solid #2a9d8f;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Class selector: Your Expenses section */
+.expenses-section {
+    background-color: #e8f1f5;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #173f5f;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #b8c4cc;
+    border-radius: 6px;
+    font: inherit;
+    margin-bottom: 8px;
+    background-color: #ffffff;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #2a9d8f;
+    border-color: #2a9d8f;
+}
+
+label {
+    font-weight: bold;
+}
+
+#empty-message {
+    color: #5c6b73;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 6px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 14px;
+    }
+
+    #page-header,
+    .expense-form-section,
+    .expenses-section {
+        padding: 18px;
+    }
+}
